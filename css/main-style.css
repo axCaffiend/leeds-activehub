@@ -86,13 +86,22 @@
 }
 
 /* ============================= */
-/* BOOTSTRAP GLOBAL OVERRIDES    */
+/* LAYOUT    */
 /* ============================= */
 
 .container-fluid {
     /* border: solid 1px red; */
     margin: 0 auto;
     padding: 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* top margin offsets from behind fixed header */
+section:first-of-type {
+    margin-top: 5rem;
 }
 
 
