@@ -1,0 +1,253 @@
+/* NOTES */
+
+
+
+
+
+
+
+/* *******************************/
+/*              CODE             */
+/* *******************************/
+
+
+/* ============== */
+/* ROOT VARIABLES */
+/* ============== */
+
+:root {
+
+/* ---------------- */
+/* Colours          */
+/* ---------------- */
+
+--primary-colour: rgb(240, 132, 6);
+--secondary-colour: rgb(5,96,240);
+--tertiary-colour: rgb(5,240,235);
+--highlight-colour-1: rgb(113,34,165);
+--surface-dark: rgb(58,79,112);
+--surface-light: rgb(255,255,255);
+
+/* Box shadows */
+--2x-box-shadow: 0.15rem 0.15rem 0px 0px;
+
+
+/* ---------------- */
+/* Font families    */
+/* ---------------- */
+
+--primary-font-family: "Rowdies", sans-serif;
+--secondary-font-family: "Open Sans", sans-serif;
+
+/* ---------------- */
+/* Text-size styles */
+/* ---------------- */
+
+/* base size: --mobile--p-text (16px) */
+
+
+/* ----- Mobile ----- */
+--notes--image-descriptions: 0.75rem;
+--mobile--h1: 3rem;
+--mobile--h2: 2.25rem;
+--mobile--h3: 1.75rem;
+--mobile--h4: 1.5rem;
+--mobile--card-title: 1.5rem;
+--mobile--card-date-time: 1.12rem;
+--mobile--lead-text: 1.25rem;
+--mobile--p-text: 1rem;
+--mobile--inline-links: 1rem;
+--mobile--small-text: 0.88rem;
+--mobile--fieldset-legend: 1.12rem;
+--mobile--field-label_upper: 0.88rem;
+--mobile--field-label_lower: 0.88rem;
+--mobile--input-placeholder-text-p: 1rem;
+--mobile--button-m: 1rem;
+
+/* ----- Desktop ----- */
+--desktop--h1: 5.38rem;
+--desktop--h2: 3.5rem;
+--desktop--h2-logo: 4rem;
+--desktop--h3: 2.5rem;
+
+/* CTAs */
+--desktop--button-m: 1.12rem;
+--desktop--lead-text: 2rem;
+--desktop--lead-text-em: 2rem;
+--desktop--p-text: 1.12rem;
+--desktop--lead-text-small: 1.38rem;
+--desktop--inline-links: 1.12rem;
+--desktop--small-text: 1rem;
+--desktop--input-placeholder-p-text: 1.12rem;
+
+/* Cards */
+--desktop--card-p-semibold: 1.25rem;
+--desktop--card-date-time: 1.25rem;
+
+}
+
+/* ============================= */
+/* BOOTSTRAP GLOBAL OVERRIDES    */
+/* ============================= */
+
+.container-fluid {
+    /* border: solid 1px red; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* ============================== */
+/* GOOGLE MATERIAL SYMBOLS STYLE  */
+/* ============================== */
+/* 
+    *** Default Settings ***
+    - No fill
+    - Weight: 400 (default)
+    - Grade: 0 (default)
+    - Size: 24px
+*/
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  vertical-align: middle;
+  
+}
+
+
+
+/* ============== */
+/* TEXT STYLING   */
+/* ============== */
+
+body {
+    font-family: var(--secondary-font-family);
+}
+
+h1 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h1);
+}
+
+h2 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h2);
+}
+
+h3 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h3);
+}
+
+h4 {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--h4);
+}
+
+.lead {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+}
+
+.lead>em {
+    font-size: var(--mobile--lead-text-em);
+    font-weight: 700;
+}
+
+legend {
+    font-size: var(--mobile--fieldset-legend);
+}
+
+.form-label {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--field-label_upper);
+    font-weight: 500;
+}
+
+
+/* ============== */
+/* COMPONENTS     */
+/* ============== */
+
+/* --- Buttons --- */
+/* NOTES */
+/* Change font size to size icons */
+/* .btn>.material-symbols-rounded {
+    font-size: 36px;
+} */
+
+.btn {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Primary */
+
+.btn-primary {
+    background-color: var(--primary-colour);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-colour);
+    box-shadow: var(--2x-box-shadow) var(--surface-dark);
+}
+
+    /* Primary Outline */
+.btn-outline-primary {
+    color: var(--primary-colour);
+    border: solid 0.1rem var(--primary-colour);
+}
+
+/*      primary hover, active */
+/*      Taken from inspecting btn-outline in browser tools */
+:not(.btn-check)+.btn-outline-primary:hover, :not(.btn-check)+.btn-outline-primary:active {
+    color: var(--surface-light);
+    border: solid 0.1rem var(--primary-colour);
+    background-color: var(--primary-colour);
+}
+
+
+/* Sliders */
+.hero-slider {
+    background: lightgrey;
+    min-height: 22.5rem;
+    
+}
+
+
+/* ============== */
+/* MAIN NAVBAR    */
+/* ============== */
+
+.navbar-dark {
+    background-color: var(--surface-dark);
+}
+
+.navbar-toggler {
+    border: solid 0.1rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+.nav-link .material-symbols-rounded {
+    font-size: 32px;
+    padding: 0 0.5em;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-colour);
+    text-underline-offset: 0.25em;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: var(--primary-colour);
+}
