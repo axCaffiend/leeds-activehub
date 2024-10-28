@@ -305,6 +305,25 @@ p {
     margin-bottom: 1rem;
 }
 
+/* ----- Cards ----- */
+
+.card-img-top {
+    min-height: 10rem;
+    background-color: lightgrey;
+}
+
+.card-title {
+    font-size: var(--mobile--card-title);
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+}
+
+.card-key-info {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--card-date-time);
+    font-weight: 600;
+}
+
 /* ============== */
 /* MAIN NAVBAR    */
 /* ============== */
