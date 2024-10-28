@@ -67,14 +67,14 @@
                 <div class="offcanvas-body">
 
                     <!-- Search bar -->
-                    <form class="d-flex my-2 my-lg-0">
+                    <form class="my-2 mx-lg-3">
                         <div class="input-group">
                             <input
-                                class="form-control me-sm-1"
+                                class="form-control"
                                 type="text"
                                 placeholder="Search ActiveHub..."/>
                             <button
-                                class="btn btn-outline-primary"
+                                class="btn btn-secondary"
                                 type="submit">
                                 <span class="material-symbols-rounded">
                                     search
@@ -84,7 +84,7 @@
                     </form>
 
                     <!-- Options -->
-                    <ul class="navbar-nav me-auto mt-2 mt-md-2">
+                    <ul class="navbar-nav me-auto align-items-lg-end">
                         <li class="nav-item">
                             <a class="nav-link active" href="/index.html" aria-current="page"
                                 ><span class="material-symbols-rounded">home</span>Home
@@ -95,7 +95,7 @@
                             <a class="nav-link" href="#"><span class="material-symbols-rounded">account_circle</span>Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="material-symbols-rounded">search</span>Find your Activity</a>
+                            <a class="nav-link" href="#"><span class="material-symbols-rounded">browse</span>Browse Activities</a>
                         </li>
                     </ul>
                 </div>
@@ -114,32 +114,52 @@
 
         <!----- Intro section ------>
 
-        <section class="intro">
+        <section class="intro p-0 container-md">
 
-            <div class="hero-slider container-lg">hero slider/reel</div>
+            <div class="hero-slider">hero slider/reel</div>
 
             <p class="lead">Get moving, <em>your</em> way.</p>
-            <p>Find activities to get out and active in Leeds - all in one place!</p>
+            <p class="lead">Find activities to get out and active in Leeds - all in one place!</p>
 
-            <div class="search-form p-3">
-                <form action="submit">
+            <form action="searchEvents" class="container col-lg-10">
 
-                    <!-- When -->
-                    <fieldset class="row g-2">
-                        <legend class="g-0">When</legend>
-                        <div class="col-6">
+                <!-- When -->
+                <fieldset class="form-group">
+                    <legend class="visually-hidden">When?</legend>
+                    <div class="chip-group chip-group-exclusive">
+                        <!-- Chip selected fro testing -->
+                        <button class="chip chip_action selected">Today</button>
+                        <button class="chip chip_action">Tomorrow</button>
+                        <button class="chip chip_action" data-chip-toggle >This Weekend</button>
+                    </div>
+                    <div class="row">
+                        <div class="col">
                             <label class="form-label" for="date-from">From</label>
                             <input id="date-from" class="form-control" type="date" name="dateFrom">
                         </div>
-                        <div class="col-6">
+                        <div class="col">
                             <label class="form-label" for="date-to">To</label>
                             <input id="date-to" class="form-control" type="date" name="dateTo">
                         </div>
-                    </fieldset>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="start-time" class="form-label">Start time</label>
+                            <input class="form-control" type="time" id="start-time" name="startTime">
+                        </div>
+                        <div class="col">
+                            <label for="end-time" class="form-label">End time</label>
+                            <input class="form-control" type="time" id="end-time" name="endTime">
+                        </div>
+                    </div>
+                </fieldset>
 
-                    <button type="submit" class="btn btn-primary btn-lg">Search<span class="material-symbols-rounded">search</span></button>
-                </form>
-            </div>
+                <fieldset class="form-group">
+
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary btn-lg">Search<span class="material-symbols-rounded">search</span></button>
+            </form>
 
         </section>
 

@@ -21,12 +21,11 @@
 /* Colours          */
 /* ---------------- */
 
---primary-colour: rgb(240, 132, 6);
---secondary-colour: rgb(5,96,240);
---tertiary-colour: rgb(5,240,235);
---highlight-colour-1: rgb(113,34,165);
---surface-dark: rgb(58,79,112);
---surface-light: rgb(255,255,255);
+--primary-colour: rgb(80,165,177);
+--secondary-colour: rgb(241,96,13);
+--tertiary-colour: rgb(119, 38, 173); 
+--surface-dark: rgb(26,38,90);
+--surface-light: rgb(254,246,237);
 
 /* Box shadows */
 --2x-box-shadow: 0.15rem 0.15rem 0px 0px;
@@ -126,6 +125,8 @@
 
 body {
     font-family: var(--secondary-font-family);
+    color: var(--surface-dark);
+    background-color: var(--surface-light);
 }
 
 h1 {
@@ -136,6 +137,7 @@ h1 {
 h2 {
     font-family: var(--primary-font-family);
     font-size: var(--mobile--h2);
+    margin: 1rem;
 }
 
 h3 {
@@ -149,6 +151,7 @@ h4 {
 }
 
 .lead {
+    font-size: var(--mobile--lead-text);
     font-family: var(--secondary-font-family);
     font-weight: 400;
 }
@@ -160,20 +163,31 @@ h4 {
 
 legend {
     font-size: var(--mobile--fieldset-legend);
+    color: var(--secondary-colour);
 }
 
 .form-label {
     font-family: var(--secondary-font-family);
     font-size: var(--mobile--field-label_upper);
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--secondary-colour);
 }
+
+p {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--p-text);
+    margin: 1rem;
+
+}
+
+
 
 
 /* ============== */
 /* COMPONENTS     */
 /* ============== */
 
-/* --- Buttons --- */
+/* ----- Buttons ----- */
 /* NOTES */
 /* Change font size to size icons */
 /* .btn>.material-symbols-rounded {
@@ -212,29 +226,84 @@ legend {
     background-color: var(--primary-colour);
 }
 
+/* Secondary */
 
-/* Sliders */
+.btn-secondary {
+    background-color: var(--secondary-colour);
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-colour);
+    box-shadow: var(--2x-box-shadow) var(--surface-dark);
+}
+
+    /* Secondary Outline */
+.btn-outline-secondary {
+    color: var(--secondary-colour);
+    border: solid 0.1rem var(--secondary-colour);
+}
+
+/*      secondary hover, active */
+/*      Taken from inspecting btn-outline in browser tools */
+:not(.btn-check)+.btn-outline-secondary:hover, :not(.btn-check)+.btn-outline-secondary:active {
+    color: var(--surface-light);
+    border: solid 0.1rem var(--secondary-colour);
+    background-color: var(--secondary-colour);
+}
+
+/* ----- Chips ----- */
+/* 
+    Chip components not available in Bootstrap, so took inspiration from how Google Material Design chips are implemented.
+    https://m3.material.io/components/chips/guidelines
+*/
+
+.chip-group {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.chip {
+    background-color: var(--surface-light);
+    color: var(--surface-dark);
+    border: solid 0.1rem var(--surface-dark);
+    border-radius: 10em;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0.25em 0.5em;
+}
+
+.chip.selected {
+    background-color: var(--surface-dark);
+    color: var(--surface-light);
+}
+
+
+/* ----- Sliders ----- */
 .hero-slider {
     background: lightgrey;
     min-height: 22.5rem;
     
 }
 
+/* ----- Forms ----- */
+.form-group .row {
+    margin-bottom: 1rem;
+}
 
 /* ============== */
 /* MAIN NAVBAR    */
 /* ============== */
 
 .navbar-dark {
-    background-color: var(--surface-dark);
+    background-color: var(--primary-colour);
 }
 
 .navbar-toggler {
     border: solid 0.1rem;
-}
-
-.nav-link {
-    font-size: 1.5rem;
 }
 
 .nav-link .material-symbols-rounded {
@@ -244,10 +313,13 @@ legend {
 
 .nav-link.active {
     text-decoration: underline;
-    text-decoration-color: var(--primary-colour);
-    text-underline-offset: 0.25em;
+    text-decoration-color: var(--surface-light);
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.25em;
 }
 
 .nav-link:hover, .nav-link:active {
-    color: var(--primary-colour);
+    color: var(--surface-dark);
 }
+
+
