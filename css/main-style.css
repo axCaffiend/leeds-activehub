@@ -57,7 +57,7 @@
 --mobile--p-text: 1rem;
 --mobile--inline-links: 1rem;
 --mobile--small-text: 0.88rem;
---mobile--fieldset-legend: 1.12rem;
+--mobile--fieldset-legend: 1.25rem;
 --mobile--field-label_upper: 0.88rem;
 --mobile--field-label_lower: 0.88rem;
 --mobile--input-placeholder-text-p: 1rem;
@@ -173,6 +173,8 @@ h4 {
 legend {
     font-size: var(--mobile--fieldset-legend);
     color: var(--secondary-colour);
+    font-weight: normal;
+    font-family: var(--primary-font-family);
 }
 
 .form-label {
