@@ -170,26 +170,13 @@ h4 {
     font-weight: 700;
 }
 
-legend {
-    font-size: var(--mobile--fieldset-legend);
-    color: var(--secondary-colour);
-    font-weight: normal;
-    font-family: var(--primary-font-family);
-}
-
-.form-label {
-    font-family: var(--secondary-font-family);
-    font-size: var(--mobile--field-label_upper);
-    font-weight: 600;
-    color: var(--secondary-colour);
-}
-
 p {
     font-family: var(--secondary-font-family);
     font-size: var(--mobile--p-text);
     margin: 1rem;
 
 }
+
 
 
 
@@ -301,9 +288,30 @@ p {
 }
 
 /* ----- Forms ----- */
+
+legend {
+    font-size: var(--mobile--fieldset-legend);
+    color: var(--secondary-colour);
+    font-weight: normal;
+    font-family: var(--primary-font-family);
+}
+
+label {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--field-label_upper);
+    font-weight: 600;
+    color: var(--secondary-colour);
+}
+
+.form-control, .form-select {
+    color: var(--surface-dark);
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+}
 .form-group .row {
     margin-bottom: 1rem;
 }
+
 
 /* ----- Cards ----- */
 
