@@ -83,12 +83,9 @@
     padding: 0;
 }
 
-section {
-    margin-bottom: 2rem;
-}
 
 /* top margin offsets from behind fixed header */
-section:first-of-type {
+main {
     margin-top: 5rem;
 }
 
