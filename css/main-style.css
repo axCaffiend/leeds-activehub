@@ -131,7 +131,6 @@ h1 {
 h2 {
     font-family: var(--primary-font-family);
     font-size: var(--mobile--h2);
-    margin: 1rem;
 }
 
 h3 {
