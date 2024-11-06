@@ -299,9 +299,24 @@ label {
 
 /* ----- Cards ----- */
 
+.card {
+    --card-border-radius: 0.5rem;
+
+    color: var(--surface-dark);
+    background-color: var(--surface-light);
+    box-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
+    border: solid 0.1rem var(--surface-dark);
+    border-radius: var(--card-border-radius);
+    max-width: 25rem;
+    
+    font-family: var(--secondary-font-family);
+}
+
+
 .card-img-top {
     min-height: 10rem;
     background-color: lightgrey;
+    border-radius: var(--card-border-radius)var(--card-border-radius) 0 0;
 }
 
 .card-title {
@@ -311,9 +326,40 @@ label {
 }
 
 .card-key-info {
-    font-family: var(--secondary-font-family);
-    font-size: var(--mobile--card-date-time);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-key-info p {
+    font-size: var(--mobile--card-key-info);
     font-weight: 600;
+    margin: 0;
+}
+
+.card-key-info.price {
+    display: block;
+    text-align: right;
+}
+
+/* ----- Tags-- --- */
+/* Based on bootstrap badges*/
+.badge {
+    background-color: var(--surface-dark);
+    font-size: var(--mobile--p-text);
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+}
+.tag-giag {
+    background-color: var(--secondary-colour);
+}
+
+.tag-beginner {
+    background-color: var(--primary-colour);
+}
+
+.tag-in-person {
+    background-color: var(--tertiary-colour);
 }
 
 /* ============== */
