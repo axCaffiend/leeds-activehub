@@ -177,9 +177,11 @@ p {
 } */
 
 .btn {
-    display: flex;
+    display: inline-flex;
     gap: 0.5rem;
     align-items: center;
+    font-family: var(--primary-font-family);
+    margin: 0 auto;
 }
 
 /* Primary */
