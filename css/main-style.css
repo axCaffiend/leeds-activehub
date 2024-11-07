@@ -354,6 +354,11 @@ legend {
     box-sizing: border-box;
 }
 
+.card-simple a {
+    text-decoration: none;
+    color: var(--surface-dark);
+}
+
 
 /* ----- Tags-- --- */
 /* Based on bootstrap badges*/
