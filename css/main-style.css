@@ -282,11 +282,11 @@ legend {
     font-family: var(--primary-font-family);
 }
 
-label {
+.form-label {
     font-family: var(--secondary-font-family);
     font-size: var(--mobile--field-label_upper);
-    font-weight: 600;
-    color: var(--secondary-colour);
+    font-weight: 700;
+    color: var(--surface-dark);
 }
 
 .form-control, .form-select {
