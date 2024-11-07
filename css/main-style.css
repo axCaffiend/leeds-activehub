@@ -186,6 +186,13 @@ p {
     margin: 0 auto;
 }
 
+/* Hover styling */
+.btn-primary:hover, .btn-secondary:hover {
+    box-shadow: var(--2x-box-shadow) var(--surface-dark);
+    transform: translate(-0.1rem, -0.1rem);
+    transition: all ease-in-out 200ms;
+}
+
 /* Primary */
 
 .btn-primary {
@@ -201,38 +208,22 @@ p {
     --bs-btn-disabled-border-color: var(--disabled-control-colour);
 }
 
-.btn-primary:hover, .btn-secondary:hover {
-    box-shadow: var(--2x-box-shadow) var(--surface-dark);
-    transform: translate(-0.1rem, -0.1rem);
-    transition: all ease-in-out 200ms;
-}
-
-
 /* Secondary */
 
 .btn-secondary {
-    background-color: var(--secondary-colour);
-    border: none;
+    --bs-btn-bg: var(--secondary-colour);
+    --bs-btn-border-color: var(--secondary-colour);
+    --bs-btn-bg: var(--secondary-colour);
+    --bs-btn-border-color: var(--secondary-colour);
+    --bs-btn-hover-bg: var(--secondary-colour);
+    --bs-btn-hover-border-color: var(--secondary-colour);
+    --bs-btn-active-bg: var(--secondary-colour);
+    --bs-btn-active-border-color:var(--surface-dark);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
 }
 
-.btn-secondary:hover {
-    background-color: var(--secondary-colour);
-    box-shadow: var(--2x-box-shadow) var(--surface-dark);
-}
 
-    /* Secondary Outline */
-.btn-outline-secondary {
-    color: var(--secondary-colour);
-    border: solid 0.1rem var(--secondary-colour);
-}
-
-/*      secondary hover, active */
-/*      Taken from inspecting btn-outline in browser tools */
-:not(.btn-check)+.btn-outline-secondary:hover, :not(.btn-check)+.btn-outline-secondary:active {
-    color: var(--surface-light);
-    border: solid 0.1rem var(--secondary-colour);
-    background-color: var(--secondary-colour);
-}
 
 /* ----- Chips ----- */
 /* 
