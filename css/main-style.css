@@ -9,9 +9,11 @@
 /* Colours          */
 /* ---------------- */
 
+
 --primary-colour: rgb(80,165,177);
 --secondary-colour: rgb(241,96,13);
---tertiary-colour: rgb(119, 38, 173); 
+--tertiary-colour: rgb(119, 38, 173);
+--disabled-control-colour: rgb(140, 140, 140);
 --surface-dark: rgb(26,38,90);
 --surface-light: rgb(254,246,237);
 
@@ -171,9 +173,9 @@ p {
 
 /* ----- Buttons ----- */
 /* NOTES */
-/* Change font size to size icons */
+/* Change font size to size icons? */
 /* .btn>.material-symbols-rounded {
-    font-size: 36px;
+    font-size: 2rem;
 } */
 
 .btn {
@@ -187,28 +189,24 @@ p {
 /* Primary */
 
 .btn-primary {
-    background-color: var(--primary-colour);
-    border: none;
+    --bs-btn-bg: var(--primary-colour);
+    --bs-btn-border-color: var(--primary-colour);
+    --bs-btn-bg: var(--primary-colour);
+    --bs-btn-border-color: var(--primary-colour);
+    --bs-btn-hover-bg: var(--primary-colour);
+    --bs-btn-hover-border-color: var(--primary-colour);
+    --bs-btn-active-bg: var(--primary-colour);
+    --bs-btn-active-border-color:var(--surface-dark);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-colour);
+.btn-primary:hover, .btn-secondary:hover {
     box-shadow: var(--2x-box-shadow) var(--surface-dark);
+    transform: translate(-0.1rem, -0.1rem);
+    transition: all ease-in-out 200ms;
 }
 
-    /* Primary Outline */
-.btn-outline-primary {
-    color: var(--primary-colour);
-    border: solid 0.1rem var(--primary-colour);
-}
-
-/*      primary hover, active */
-/*      Taken from inspecting btn-outline in browser tools */
-:not(.btn-check)+.btn-outline-primary:hover, :not(.btn-check)+.btn-outline-primary:active {
-    color: var(--surface-light);
-    border: solid 0.1rem var(--primary-colour);
-    background-color: var(--primary-colour);
-}
 
 /* Secondary */
 
