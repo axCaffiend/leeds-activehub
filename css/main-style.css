@@ -335,6 +335,26 @@ legend {
     text-align: right;
 }
 
+/* Simple Cards */
+/* Used for one piece of text (category cards), created new since */
+
+.card-simple-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.card-simple {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+
 /* ----- Tags-- --- */
 /* Based on bootstrap badges*/
 .badge {
