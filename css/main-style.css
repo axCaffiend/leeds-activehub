@@ -19,6 +19,7 @@
 
 /* Box shadows */
 --2x-box-shadow: 0.15rem 0.15rem 0px 0px;
+--card-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
 
 
 /* ---------------- */
@@ -290,12 +291,13 @@ legend {
 
 /* ----- Cards ----- */
 
+/* Listing cards */
 .card {
     --card-border-radius: 0.5rem;
 
     color: var(--surface-dark);
     background-color: var(--surface-light);
-    box-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
+    box-shadow: var(--card-shadow);
     border: solid 0.1rem var(--surface-dark);
     border-radius: var(--card-border-radius);
     max-width: 25rem;
