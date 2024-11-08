@@ -281,12 +281,21 @@ legend {
     color: var(--surface-dark);
 }
 
+.form-label-lower {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--field-label_lower);
+}
+
 .form-control, .form-select {
     color: var(--surface-dark);
     font-family: var(--secondary-font-family);
     font-weight: 600;
 }
 .form-group .row {
+    margin-bottom: 1rem;
+}
+
+.form-control.textarea-maxlength {
     margin-bottom: 1rem;
 }
 
