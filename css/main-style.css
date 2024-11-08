@@ -271,6 +271,13 @@ p {
 
 /* ----- Forms ----- */
 
+/* Spacing */
+.form-group .row {
+    margin-bottom: 1rem;
+}
+
+/* Legends & Labels */
+
 legend {
     font-size: var(--mobile--fieldset-legend);
     color: var(--secondary-colour);
