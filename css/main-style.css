@@ -176,12 +176,17 @@ p {
     margin: 1rem;
 }
 
+a {
+    color: inherit;
+}
+
 .inline-link, .inline-link:active, .inline-link:visited {
     display: inline-block;
-    color: inherit;
     text-decoration-color: var(--secondary-colour);
     text-underline-offset: 15%;
 }
+
+
 
 
 
