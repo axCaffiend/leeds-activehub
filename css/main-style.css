@@ -423,7 +423,7 @@ a {
 
 
 /* ----- Cards ----- */
-.card-carousel {
+.card-stack {
     border: solid 2px red;
 }
 /* Listing cards */
@@ -435,7 +435,6 @@ a {
     box-shadow: var(--card-shadow);
     border: solid 0.1rem var(--surface-dark);
     border-radius: var(--card-border-radius);
-    max-width: 25rem;
     
     font-family: var(--secondary-font-family);
 }
