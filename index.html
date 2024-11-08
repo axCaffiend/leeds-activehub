@@ -75,7 +75,7 @@
                 <div class="offcanvas-body">
 
                     <!-- Search bar -->
-                    <form class="my-2 mx-lg-3">
+                    <form method="POST" action="search" class="my-2 mx-lg-3">
                         <div class="input-group">
                             <input
                                 class="form-control"
@@ -345,7 +345,7 @@
                 <div class="col">
                     <h3>Any Questions?</h3>
                     <p>Tell us what we can help you with, and we'll be in touch! </p>
-                    <form method="POST" action="" class="container p-4 col-lg-10 col-xl-9">
+                    <form method="POST" action="contactForm" class="container p-4 col-lg-10 col-xl-9">
                         <div class="row row-cols-1 g-3">
                             <div class="col">
                                 <label class="form-label" for="email">Your Email</label>
@@ -361,14 +361,14 @@
                                     <input type="checkbox" class="form-check-input" id="newsletter-signup" name="newsletterSignup">
                                 </div>
                             </div>
-                            <div class="col text-center"><button class="btn btn-lg btn-primary">Submit <span class="material-symbols-rounded">send</span></button></div>
+                            <div class="col text-center">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit <span class="material-symbols-rounded">send</span></button></div>
                         </div>
                     </form>
                 </div>
             </div>
-
-
          </section>
+
     </main>
     
     
