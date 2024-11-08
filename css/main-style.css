@@ -118,6 +118,13 @@ main {
   
 }
 
+/* ============== */
+/* ICONOIR ICONS  */
+/* ============== */
+/* Used for main-footer social media links */
+i[class^="iconoir-"] {
+    font-size: 3rem;
+}
 
 
 /* ============== */
@@ -455,3 +462,11 @@ legend {
 }
 
 
+/* ============== */
+/* MAIN FOOTER    */
+/* ============== */
+
+.main-footer {
+    background-color: var(--surface-dark);
+    color: var(--surface-light);
+}

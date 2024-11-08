@@ -17,6 +17,11 @@
     <!-- Google Material Symbols -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Iconoir -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+  
+
     <!-- Bootstrap V5.3.3  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -39,7 +44,7 @@
     <!----------------------->
     <!------- HEADER -------->
     <!----------------------->
-    <header>
+    <header id="page-top">
 
         <!------- Main Nav ------->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
@@ -371,8 +376,57 @@
 
     </main>
     
-    
-    <footer></footer>
+    <!----------------------->
+    <!------- FOOTER -------->
+    <!----------------------->
+
+    <footer class="main-footer container-fluid pt-4 pb-3">
+        
+        <!-- Content container -->
+        <div class="container justify-content-center text-center g-0 col-xs-10 col-lg-8 col-xl-8">
+            
+            <!-- Back to top -->
+            <div class="row g-0 mb-3">
+                <div class="col"><a href="#page-top" class="btn btn-sm btn-outline-primary">Back to top <span class="material-symbols-rounded">arrow_upward</span></a></div>
+            </div>
+            
+            <!-- Social media links -->
+            <div class="row row-cols-1 row-cols-md-2 g-0 mb-4">
+                <div class="col">
+                    <p class="lead">Follow us for the latest news and offers</p>
+                    <div class="container d-flex justify-content-center gap-4">
+                        <i class="iconoir-facebook"></i>
+                        <i class="iconoir-x"></i>
+                        <i class="iconoir-instagram"></i>
+                        <i class="iconoir-tiktok"></i>
+                    </div>
+                </div>
+                <!-- Newsletter Signup -->
+                <div class="col">
+                    <form class="container px-4 text-start" action="newsletterSignup">
+                        <label class="form-legend px-2 py-3" for="email">Sign up to our newsletter...</label>
+                        <div class="input-group">
+                                <input id="email" name="email" type="email" class="form-control" placeholder="youremail@example.com" required>
+                                <button type="submit" class="btn btn-secondary"><span class="material-symbols-rounded">mail</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Small print -->
+            <div class="row row-cols-1 justify-content-center g-0">
+                <div class="col-6 mb-3">
+                    <div class="container d-flex flex-column gap-3 flex-md-row gap-md-5">
+                        <a href="" class="inline-link">Terms and Conditions</a>
+                        <a href="" class="inline-link">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <p>Leeds ActiveHub &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- ------------------ -->
     <!-------- SCRIPTS ------->
