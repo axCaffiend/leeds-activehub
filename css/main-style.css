@@ -17,6 +17,10 @@
 --surface-dark: rgb(26,38,90);
 --surface-light: rgb(254,246,237);
 
+/* Focus rings */
+--focus-ring-opacity: 0.25;
+--custom-focus-ring: rgb(80,165,177, var(--focus-ring-opacity));
+
 /* Box shadows */
 --2x-box-shadow: 0.15rem 0.15rem 0px 0px;
 --card-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
