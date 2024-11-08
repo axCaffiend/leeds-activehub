@@ -507,11 +507,11 @@ a {
     background-color: var(--secondary-colour);
 }
 
-.tag-beginner {
+.tag-level {
     background-color: var(--primary-colour);
 }
 
-.tag-in-person {
+.tag-location {
     background-color: var(--tertiary-colour);
 }
 
