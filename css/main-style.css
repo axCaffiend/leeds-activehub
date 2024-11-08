@@ -423,7 +423,9 @@ a {
 
 
 /* ----- Cards ----- */
-
+.card-carousel {
+    border: solid 2px red;
+}
 /* Listing cards */
 .card {
     --card-border-radius: 0.5rem;
