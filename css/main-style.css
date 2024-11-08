@@ -324,7 +324,7 @@ p {
 
 /* Legends & Labels */
 
-legend {
+.form-legend {
     font-size: var(--mobile--fieldset-legend);
     color: var(--secondary-colour);
     font-weight: normal;
@@ -332,10 +332,8 @@ legend {
 }
 
 .form-label {
-    font-family: var(--secondary-font-family);
     font-size: var(--mobile--field-label_upper);
     font-weight: 700;
-    color: var(--surface-dark);
 }
 
 .form-label-lower {
@@ -348,6 +346,7 @@ legend {
     color: var(--surface-dark);
     font-family: var(--secondary-font-family);
     font-weight: 600;
+    border: solid 0.05rem var(--surface-dark);
 }
 
 /* Focus ring */
