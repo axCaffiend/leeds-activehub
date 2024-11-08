@@ -174,10 +174,14 @@ p {
     font-family: var(--secondary-font-family);
     font-size: var(--mobile--p-text);
     margin: 1rem;
-
 }
 
-
+.inline-link, .inline-link:active, .inline-link:visited {
+    display: inline-block;
+    color: inherit;
+    text-decoration-color: var(--secondary-colour);
+    text-underline-offset: 15%;
+}
 
 
 
