@@ -136,17 +136,29 @@
             <h2>Get moving, <em>your</em> way.</h2>
             <p class="lead">Find activities to get out and active in Leeds - all in one place!</p>
 
+            <!-- Search Events form -->
             <form action="searchEvents" class="container p-4 col-lg-10 col-xl-9">
 
-                <!-- When -->
                 <fieldset class="form-group">
+                    <!-- When -->
                     <legend class="form-legend">Pick a date and time...</legend>
-                    <div class="chip-group chip-group-exclusive">
-                        <!-- Chip selected fro testing -->
-                        <button class="chip chip_action selected">Today</button>
-                        <button class="chip chip_action">Tomorrow</button>
-                        <button class="chip chip_action" data-chip-toggle >This Weekend</button>
+
+                    <div class="container text-center" role="group" aria-label="Quick select dates">
+                        <!-- Today -->
+                        <input type="radio" class="btn-check" name="btnradioDate" id="btnradio-today" value="today"
+                        autocomplete="off">
+                        <label for="btnradio-today" class="btn btn-outline-dark rounded-pill btn-radio-chip">Today</label>
+
+                        <!-- Tomorrow -->
+                        <input type="radio" class="btn-check" name="btnradioDate" id="btnradio-tomorrow" value="tomorrow" autocomplete="off">
+                        <label for="btnradio-tomorrow" class="btn btn-outline-dark rounded-pill btn-radio-chip">Tomorrow</label>
+
+                        <!-- This Week -->
+                        <input type="radio" class="btn-check" name="btnradioDate" value="thisWeek" id="btnradio-this-week" autocomplete="off"> 
+                        <label for="btnradio-this-week" class="btn btn-outline-dark rounded-pill btn-radio-chip">This Week</label>
                     </div>
+
+                    <!-- Date input -->
                     <div class="row">
                         <div class="col">
                             <label class="form-label" for="date-from">From</label>
@@ -157,6 +169,7 @@
                             <input id="date-to" class="form-control" type="date" name="dateTo">
                         </div>
                     </div>
+                    <!-- Time input -->
                     <div class="row">
                         <div class="col">
                             <label for="start-time" class="form-label">Start time</label>
@@ -168,7 +181,7 @@
                         </div>
                     </div>
                 </fieldset>
-                
+                <!-- Area input -->
                 <fieldset class="form-group">
                     <legend class="form-legend">Where in Leeds?</legend>
                     <div class="row">
