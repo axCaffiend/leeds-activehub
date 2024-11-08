@@ -297,17 +297,41 @@ legend {
     font-size: var(--mobile--field-label_lower);
 }
 
+/* Control - general */
 .form-control, .form-select {
     color: var(--surface-dark);
     font-family: var(--secondary-font-family);
     font-weight: 600;
 }
-.form-group .row {
-    margin-bottom: 1rem;
+
+/* Focus ring */
+.form-control:focus, .form-check-input:focus {
+    border: solid 0.05rem var(--primary-colour);
+    box-shadow: 0 0 0 0.25rem var(--custom-focus-ring);
 }
+
+/* Textarea */
 
 .form-control.textarea-maxlength {
     margin-bottom: 1rem;
+}
+
+/* Checkboxes */
+.form-check {
+    padding-left: 2em;
+}
+
+.form-check-label {
+    padding-left: 1em;
+}
+/* Scaled checkbox - using scale prevents spacing issues */
+.form-check-input {
+    scale: 2;
+}
+
+.form-check-input:checked {
+    background-color: var(--secondary-colour);
+    border-color: var(--secondary-colour);
 }
 
 
