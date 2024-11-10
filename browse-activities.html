@@ -37,7 +37,7 @@
      <!-- For bootstrap-select -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <title>Leeds ActiveHub Home</title>
+    <title>Leeds ActiveHub - Browse</title>
 </head>
 <body>
 
@@ -123,8 +123,102 @@
     <!--------- MAIN -------->
     <!----------------------->
     <main class="container-fluid">
-        
+        <section class="search container mb-3 mb-sm-4 mb-lg-5">
+            <h2>Search</h2>
 
+            <!-- SEARCH FORM -->
+            <form action="searchEvents" class="container p-4 col-lg-10 col-xl-9">
+
+                <!-- Keywords -->
+                <fieldset class="form-group container mb-3">
+                    <label class="form-label" for="keywords">Keywords</label>
+                    <input
+                        class="form-control"
+                        id="keywords"
+                        type="text"
+                        placeholder="Search ActiveHub..."/>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <!-- When -->
+                    <legend class="form-legend">Pick a date and time...</legend>
+
+                    <div class="container text-center" role="group" aria-label="Quick select dates">
+                        <!-- Today -->
+                        <input type="radio" class="btn-check" name="btnradioDate" id="btnradio-today" value="today"
+                        autocomplete="off">
+                        <label for="btnradio-today" class="btn btn-outline-dark rounded-pill btn-radio-chip">Today</label>
+
+                        <!-- Tomorrow -->
+                        <input type="radio" class="btn-check" name="btnradioDate" id="btnradio-tomorrow" value="tomorrow" autocomplete="off">
+                        <label for="btnradio-tomorrow" class="btn btn-outline-dark rounded-pill btn-radio-chip">Tomorrow</label>
+
+                        <!-- This Week -->
+                        <input type="radio" class="btn-check" name="btnradioDate" value="thisWeek" id="btnradio-this-week" autocomplete="off"> 
+                        <label for="btnradio-this-week" class="btn btn-outline-dark rounded-pill btn-radio-chip">This Week</label>
+                    </div>
+
+                    <!-- Date input -->
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="date-from">From</label>
+                            <input id="date-from" class="form-control" type="date" name="dateFrom">
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="date-to">To</label>
+                            <input id="date-to" class="form-control" type="date" name="dateTo">
+                        </div>
+                    </div>
+                    <!-- Time input -->
+                    <div class="row">
+                        <div class="col">
+                            <label for="start-time" class="form-label">Start time</label>
+                            <input class="form-control" type="time" id="start-time" name="startTime">
+                        </div>
+                        <div class="col">
+                            <label for="end-time" class="form-label">End time</label>
+                            <input class="form-control" type="time" id="end-time" name="endTime">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Area input -->
+                <fieldset class="form-group">
+                    <legend class="form-legend">Where in Leeds?</legend>
+                    <div class="row">
+                        <div class="col">
+                            <label for="area-select" class="visually-hidden">Pick an area of Leeds</label>
+                            <select class="selectpicker form-control" name="area" id="area-select" default="city-wide" data-style="form-control" multiple >
+                                <option value="city-wide" selected>City wide</option>
+                                <option value="city-center">City center</option>
+                                <option value="east">East Leeds</option>
+                                <option value="north">North</option>
+                                <option value="south">South</option>
+                                <option value="west">West</option>
+                            
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Filters -->
+
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary btn-md">More Filters<span class="material-symbols-rounded">sort</span></button>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="row text-center">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary btn-lg">Search<span class="material-symbols-rounded">search</span></button>
+                    </div>
+                </div>
+
+                
+            </form>
+        </section>
     </main>
     
     <!----------------------->
