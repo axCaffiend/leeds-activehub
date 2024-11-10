@@ -515,6 +515,14 @@ a {
     background-color: var(--tertiary-colour);
 }
 
+/* --- USP Points --- */
+.usp-point-group {
+    list-style-type: none;
+}
+
+.usp-point>.material-symbols-rounded {
+    font-size: 2em;
+}
 /* ============== */
 /* MAIN NAVBAR    */
 /* ============== */
