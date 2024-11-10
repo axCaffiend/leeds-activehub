@@ -90,8 +90,8 @@
 
 
 /* top margin offsets from behind fixed header */
-main {
-    margin-top: 5rem;
+main.container-fluid {
+    padding-top: 7rem;
 }
 
 
