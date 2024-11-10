@@ -46,12 +46,11 @@
 --mobile--h2: 2.25rem;
 --mobile--h3: 1.75rem;
 --mobile--h4: 1.5rem;
---mobile--card-title: 1.5rem;
---mobile--card-key-info: 1.12rem;
+--mobile--card-title: 1.25rem;
+--mobile--card-key-info: 1rem;
 --mobile--lead-text: 1.25rem;
 --mobile--p-text: 1rem;
 --mobile--inline-links: 1rem;
---mobile--small-text: 0.88rem;
 --mobile--fieldset-legend: 1.25rem;
 --mobile--field-label_upper: 1rem;
 --mobile--field-label_lower: 1rem;
@@ -71,7 +70,6 @@
 --desktop--p-text: 1.12rem;
 --desktop--lead-text-small: 1.38rem;
 --desktop--inline-links: 1.12rem;
---desktop--small-text: 1rem;
 --desktop--input-placeholder-p-text: 1.12rem;
 
 /* Cards */
@@ -453,7 +451,7 @@ a {
 }
 
 .card-body p {
-    margin: 0.25rem;
+    margin: 0;
 }
 
 .card-key-info {
@@ -482,6 +480,7 @@ a {
     justify-content: center;
     max-width: 50%;
     box-sizing: border-box;
+    align-self: center;
 }
 
 .card-simple a {
@@ -497,7 +496,9 @@ a {
     font-size: var(--mobile--p-text);
     font-family: var(--secondary-font-family);
     font-weight: 600;
+    margin-bottom: var(--bs-badge-padding-y);
 }
+
 .tag-giag {
     background-color: var(--secondary-colour);
 }
