@@ -25,6 +25,9 @@
 --2x-box-shadow: 0.15rem 0.15rem 0px 0px;
 --card-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
 
+/* Borders */
+--form-control-border: solid 0.05rem var(--surface-dark);
+
 
 /* ---------------- */
 /* Font families    */
@@ -386,7 +389,13 @@ a {
     color: var(--surface-dark);
     font-family: var(--secondary-font-family);
     font-weight: 600;
-    border: solid 0.05rem var(--surface-dark);
+    border: var(--form-control-border);
+}
+
+/* Input groups */
+.input-group-text {
+    background-color: inherit;
+    border: var(--form-control-border);
 }
 
 /* Focus ring */
@@ -419,6 +428,29 @@ a {
     border-color: var(--secondary-colour);
 }
 
+/* noUISlider input */
+
+/* Handles */
+.noUi-handle {
+    background: var(--surface-dark);
+    border: var(--form-control-border);
+    box-shadow: none;
+}
+
+/* Hide notches */
+.noUi-handle::before, .noUi-handle::after {
+    display: none;
+}
+
+/* Connector fill */
+.noUi-connects {
+    background-color: var(--primary-colour);
+}
+
+.noUi-pips {
+    font-family: var(--secondary-font-family);
+    color: var(--surface-dark);
+}
 
 /* ----- Cards ----- */
 
