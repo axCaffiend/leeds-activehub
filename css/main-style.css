@@ -442,8 +442,8 @@ a {
     display: none;
 }
 
-/* Connector fill */
-.noUi-connects {
+/* Connector range fill */
+.noUi-connect {
     background-color: var(--primary-colour);
 }
 
