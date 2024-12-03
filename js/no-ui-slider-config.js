@@ -6,7 +6,7 @@ const priceRange = document.getElementById('price-range');
 
 
 noUiSlider.create(priceRange, {
-    start: [1, 50],
+    start: [0, 50],
     step: 1,
     connect: true,
     range: {
