@@ -320,6 +320,23 @@
         <section class="results container-lg mb-3 mb-sm-4 mb-lg-5">
             <h2 class="h3">6 results</h2>
 
+            <form action="SORT_RESULTS" method="POST">
+                        <label for="area-select" class="visually-hidden">Sort results by:</label>
+                        <div class="row">
+                            <div class="col-auto">
+                                <select class="form-control" name="sortBy" id="sort-results-options" default="time" data-style="form-control">
+                                    <option value="time" selected>Time</option>
+                                    <option value="distance">Distance</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Top Rated</option>
+                                </select>
+                            </div>
+                        </div>
+            </form>
+                
+            </select>
+            <!-- Results -->
             <div class="card-stack justify-content-center gx-0 gx-md-3 gy-3 my-4 row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
                 <!-- 1 Capoeira Club Leeds-->
