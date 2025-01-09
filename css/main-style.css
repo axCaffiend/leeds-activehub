@@ -116,7 +116,11 @@ main.container-fluid {
   'GRAD' 0,
   'opsz' 24;
   vertical-align: middle;
-  
+}
+
+/* Material symbols - inline */
+p>.material-symbols-rounded {
+    margin-right: 0.25rem;
 }
 
 /* ============== */
@@ -501,12 +505,8 @@ a {
     font-weight: 600;
 }
 
-.card-key-info>.material-symbols-rounded {
-    margin-right: 0.25rem;
-}
-
 /* Simple Cards */
-/* Used for one piece of text (category cards), created new since */
+/* Used for one piece of text (category cards)*/
 
 .card-simple-group {
     display: flex;
