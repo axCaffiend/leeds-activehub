@@ -187,9 +187,15 @@ a {
     text-underline-offset: 15%;
 }
 
+/* ============== */
+/* BG BASE COLOUR */
+/* ============== */
 
-
-
+/* Overrides Bootstrap utility class with !important */
+.bg-dark {
+    background-color: var(--surface-dark) !important;
+    color: var(--surface-light) !important;
+}
 
 /* ============== */
 /* COMPONENTS     */
@@ -581,14 +587,4 @@ a {
 
 .nav-link:hover, .nav-link:active {
     color: var(--surface-dark);
-}
-
-
-/* ============== */
-/* MAIN FOOTER    */
-/* ============== */
-
-.main-footer {
-    background-color: var(--surface-dark);
-    color: var(--surface-light);
 }
