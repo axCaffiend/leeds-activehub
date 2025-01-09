@@ -220,6 +220,7 @@ a {
     font-family: var(--primary-font-family);
     font-weight: 300;
     margin: 0 auto;
+    width: auto;
 }
 
 /* Hover styling */
